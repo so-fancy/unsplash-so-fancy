@@ -1,0 +1,18 @@
+{
+  "name": "unsplash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "get.js",
+  "dependencies": {
+    "node-fetch": "^1.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "unsplash-get": "./get.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
