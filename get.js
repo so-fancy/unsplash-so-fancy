@@ -6,7 +6,7 @@ const fs = require('fs');
 
 //fetch('https://google.com/', {redirect: 'manual'})
 
-const DEST = '/Users/josephg/unsplash/';
+const DEST = path.resolve(process.env.HOME, 'unsplash');
 
 const exists = (filename) => {
   try {
@@ -54,5 +54,5 @@ const get = (url) => {
 const res = '2560x1440';
 ['nature', 'technology', 'objects', 'people'].forEach(category => {
   //get(`https://source.unsplash.com/category/${category}/${res}/daily`);
-  get(`https://source.unsplash.com/category/${category}/${res}`);
+  get(`https://source.unsplash.com/category/${category}/featured/${res}`);
 });
