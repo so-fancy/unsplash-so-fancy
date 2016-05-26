@@ -4,9 +4,8 @@ const urllib = require('url');
 const path = require('path');
 const fs = require('fs');
 
-//fetch('https://google.com/', {redirect: 'manual'})
-
 const DEST = path.resolve(process.env.HOME, 'unsplash');
+try { fs.mkdirSync(DEST); } catch(e) {}
 
 const exists = (filename) => {
   try {
@@ -51,8 +50,9 @@ const get = (url) => {
   });
 };
 
+// Categories: buildings food nature people technology objects
 const res = '2560x1440';
-['nature', 'technology', 'objects', 'people'].forEach(category => {
+['buildings', 'food', 'nature', 'objects', 'people'].forEach(category => {
   //get(`https://source.unsplash.com/category/${category}/${res}/daily`);
   get(`https://source.unsplash.com/category/${category}/featured/${res}`);
 });
