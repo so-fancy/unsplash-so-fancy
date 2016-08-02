@@ -1,17 +1,19 @@
-# Unsplash downloader
+> Fancy unsplashy desktop images
 
-This is a simple thrown together library to periodically download unsplash
-images into a wallpapers directory. You can then tell macos to cycle through
-the directory, using them as wallpaper images.
+## Install
 
-I'm not using the [official unsplash
-library](https://www.npmjs.com/package/unsplash) because eh.
+```
+npm install -g unsplash-so-fancy
+```
 
-The launchctl script will run the unsplash downloader every 6 hours. You should
-modify it to suit your preferences. (Actually you should modify the whole
-script to suit your preferences).
+It will automatically change your desktop image every 21600 seconds (6 hours)
 
-This library is not maintained. It is put here for convenience. Issues will be
-ignored. Fork and modify for yourself.
+To change a desktop image, run
 
-## Licenced under standard ISC license.
+```
+unsplash-so-fancy
+```
+
+## Inspired by [Seph's blog](https://josephg.com/blog/shiny-background-images/)
+
+## MIT

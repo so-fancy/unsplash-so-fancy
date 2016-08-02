@@ -1,18 +1,32 @@
 {
-  "name": "unsplash",
-  "version": "1.0.0",
-  "description": "",
-  "main": "get.js",
+  "name": "unsplash-so-fancy",
+  "version": "0.0.0",
+  "description": "Fancy unsplashy desktop images",
+  "main": "index.js",
   "dependencies": {
-    "node-fetch": "^1.5.3"
+    "node-fetch": "^1.5.3",
+    "path-exists": "^3.0.0",
+    "pify": "^2.3.0",
+    "wallpaper": "^2.3.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "./install"
   },
+  "keywords": [
+    "fancy",
+    "good-lookin'",
+    "diff-highlight",
+    "color",
+    "images",
+    "unsplash",
+    "unsplashy",
+    "desktop"
+  ],
   "bin": {
-    "unsplash-get": "./get.js"
+    "unsplash-so-fancy": "cli.js"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Steve Mao",
+  "license": "MIT"
 }

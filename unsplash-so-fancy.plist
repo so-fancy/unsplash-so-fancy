@@ -7,9 +7,9 @@
 	<key>KeepAlive</key>
 	<false/>
 	<key>Label</key>
-	<string>unsplash</string>
+	<string>unsplash-so-fancy</string>
 	<key>Program</key>
-	<string>/usr/local/bin/unsplash-get</string>
+	<string>/usr/local/bin/unsplash-so-fancy</string>
 	<key>RunAtLoad</key>
 	<false/>
 	<key>StartInterval</key>
