@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
-rm ~/Library/LaunchAgents/unsplash-so-fancy.plist;
-cp unsplash-so-fancy.plist ~/Library/LaunchAgents/;
+rm ~/Library/LaunchAgents/unsplash-so-fancy.plist
+cp unsplash-so-fancy.plist ~/Library/LaunchAgents/
 launchctl unload ~/Library/LaunchAgents/unsplash-so-fancy.plist
 launchctl load ~/Library/LaunchAgents/unsplash-so-fancy.plist
 unsplash-so-fancy
