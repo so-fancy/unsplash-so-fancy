@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 
-rm ~/Library/LaunchAgents/unsplash-so-fancy.plist
-cp unsplash-so-fancy.plist ~/Library/LaunchAgents/
+sed 's|${which-unsplash-so-fancy}|'`which unsplash-so-fancy`'|g' './unsplash-so-fancy.plist' > ~/Library/LaunchAgents/unsplash-so-fancy.plist
 launchctl unload ~/Library/LaunchAgents/unsplash-so-fancy.plist
 launchctl load ~/Library/LaunchAgents/unsplash-so-fancy.plist
 unsplash-so-fancy

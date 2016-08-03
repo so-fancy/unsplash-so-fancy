@@ -69,7 +69,7 @@ module.exports = url => {
             skip: () => imageExists
         },
         {
-            title: `setting wallpaper`,
+            title: 'Setting wallpaper',
             task: () => wallpaper.set(imagePath)
         }
     ]);
